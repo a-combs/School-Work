@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Scope Challange 2</title>
+	<link rel="stylesheet" type="text/css" href="Scope2.css">
+
+</head>
+<body>
+
+		<div id="no-hover">
+
+		<p>Dont Hover Over Me</p>
+
+		<script>
+		
+
+			document.getElementById("no-hover").addEventListener("mouseover", function(event) {
+				alert("Hey, I told you not to hover over me!");
+			});	
+
+			document.getElementById("no-hover").addEventListener("mouseout", function(event) {
+				alert("hover over me");
+			});		
+
+
+
+		</script>
+
+</body>
+</html>
