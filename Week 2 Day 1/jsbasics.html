@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>javascript basics</title>
+
+</head>
+	
+	<body>
+
+		<script>
+			//Create a script with two variables, each assigned to a number. Add them together and output the result to the console. 
+			//Now do the same with two strings.
+
+			var x = 1;
+			var y = 2;
+			console.log(x + y);
+
+			var stringOne = "Aaron";
+			var stringTwo ="Combs";
+			console.log(stringOne+ " " + stringTwo);
+
+			//Create a multidimensional array related to a subject that interests you. Output two of the items in sub-arrays to the console.
+
+			var cars = [
+				["cadillac", "chevrolet", "lincoln", "ferrari"],
+				["buick", "pontiac", "mazda"]	
+			];
+
+			console.log (cars[0][0] + cars[1][2]);
+
+			//Write a script that checks if a variable is less than 100. If it is, alert the user that their variable is less than 100. 
+			//If it is not alert the user of what the value was and that it was greater than 100.
+
+			var num = 99;
+
+			if ( num < 100) {
+				alert("Variable is less than 100");
+			} else {
+				alert("Variable, " + num + ", is greater than 100.");
+			};
+
+			//Try running the script and then changing the variable's value to see how this affects the program's output.
+
+			num = 12;
+
+			if ( num < 100) {
+				alert("Variable is less than 100");
+			} else {
+				alert( "Variable, "+ num + ", is greater than 100.");
+			};
+
+			//Write a similar script to check if a string stored in a variable is the same as another string.
+
+			var name = "Aaron";
+
+			if (name === "Combs") {
+				alert("This is the same!");
+			} else {
+				alert("This is different!");
+			}
+
+			//Declare a function that takes a name as an argument and tells the user what name they've entered. 
+			//Try running it after it has been declared.
+
+			var greet = function (name) {
+				alert ("You have entered " + name);
+			};
+
+			greet("aaron");
+		
+			//Declare a function that takes no arguments but prints something to the console. Try running it after it has been declared.
+
+			var something = function () {
+				console.log("starting to get the hang of it");
+			};
+
+			something();
+
+
+			// Does the above work the same as the following? 
+			// Yes, it's just two different ways of doing the same thing.
+			function someFunction() {
+				console.log("starting to get the hang og it");
+			}
+
+			//Declare a function that depending upon which virtual 'door' was entered tells the user they've received a different 'prize' in an alert. 
+			//After declaring the function, try running it with different options. There must be at least 3 doors.
+
+			function pickDoor (doorNumber) {
+				if (doorNumber === 1) {
+					alert ("first place!");
+				}
+				else if (doorNumber === 2) {
+					alert ("2nd place");
+				}
+				else if(doorNumber === 3){
+					alert ("3rd place");
+				}
+			}
+
+			pickDoor (1);
+			pickDoor (2);
+			pickDoor (3);
+
+
+		</script>
+
+	</body>
+</html>
