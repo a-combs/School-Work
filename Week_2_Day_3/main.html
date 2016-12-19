@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Week 2, Day 3</title>
+
+		<script src="warmup.js"></script>
+
+		<link href="main.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<h1 id="header">Week 2, Day 3</h1>
+		<h1 id="myHeader"> How can you get me? </h1>
+
+		<!--<form id="myForm" onsubmit="changeHeader()">-->
+		<form id="myForm">
+
+			<label for="firstName">First Name</label>
+			<input oninput="changeHeader()" name="firstName" id="firstName" type="text">
+
+			<br>
+			<label for="lastName">Last Name</label>
+			<input oninput="changeFooter()" name="lastName" id="lastName" type="text">
+
+			<br>
+			<label for="shoeSize">Shoe Size</label>
+			<input name="shoeSize" id="shoeSize" type="number">
+
+			<br>
+			<label for="comments">Comments</label>
+			<textarea name="comments" id="comments">lsjdkfjdkfjkdsj</textarea>
+
+			<br>
+			<label for="passWord">Password</label>
+			<input name="passWord" id="passWord" type="passWord">
+
+			<input type="submit" value="submit">
+			
+		</form>
+
+		<script src="main.js"></script>
+	</body>
+
+	<br>
+	<br>
+	<footer id="footer">You have finished!!</footer>
+
+</html>
