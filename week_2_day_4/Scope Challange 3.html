@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>task 3</title>
+	</head>
+
+		<body>
+
+		<h1 id= "presskey">Press any key!</h1>
+
+			<script>
+
+			//Create an HTML page with javascript that listens for a keypress.
+			//When the user presses that key, the text of the H1 should show the value of the key
+			//they have pressed
+				
+			document.addEventListener("keypress", function(event) {
+
+			document.getElementById("presskey"). innerText = String.fromCharCode(event.which);
+
+			});
+
+			</script>
+
+		</body>
+</html>
