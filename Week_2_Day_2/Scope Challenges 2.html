@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>task 2</title>
+		<link rel="stylesheet" type="text/css" href="scope 2.css">
+
+	</head>
+		<body>
+
+			<div id= "no-hover">
+
+				<p>Don't hover over me!</p>
+
+			</div>
+
+				<script>
+		
+				// 	Create an HTML page with a large element on the page that says "Don't hover over me" 
+				//inside of it. When you hover over the element, send an alert to the user that says 
+				// "Hey, I told you not to hover over me!"
+
+					document.getElementById("no-hover").addEventListener("mouseover", function(event) {
+					alert("Hey, I told you not to hover over me!");
+				});			
+
+
+
+				</script>
+
+		</body>
+</html>
