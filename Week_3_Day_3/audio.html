@@ -1,0 +1,55 @@
+<!DOCTYPE>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta http-equiv="refresh" content="432; url=song2.mp3">
+
+        <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+    <script src="audio.js"></script>
+
+    <title>Automated JukeBox</title>
+
+<style type="text/css">
+    a:link {color:#996633 ;text-decoration:none;font-weight:bold;}
+    a:visited {color:#996633 ;text-decoration:none;}
+    a:hover {color:#999933 ;text-decoration:none;}
+    a:active {color:#996633 ;text-decoration:none;}
+</style>
+
+</head>
+
+<body style="background-color:#000000 ; color:#FFF000 ; font-family:Verdana, Arial; font-size:12px">
+
+Song now playing:<br>
+
+<span style="color:#ffffff ">Demo1</span>
+
+<br><br><br>
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td>
+
+</td></tr></table><br>
+
+Jukebox Song List:
+<br><br>
+
+<audio id="song1" preload="auto" tabindex="0" >
+ <source src="s1.mp3">
+</audio>
+
+<audio id="song2" preload="auto" tabindex="0" >
+ <source src="s2.mp3">
+</audio>
+
+<audio id="song3" preload="auto" tabindex="0" >
+ <source src="s3.mp3">
+</audio>
+
+1. <a id="song1link" onclick="playOrStop(document.getElementById('song1'))">Demo1</a> <br>
+2. <a id="song2link" onclick="playOrStop(document.getElementById('song2'))">Demo2</a> <br>
+3. <a id="song2link" onclick="playOrStop(document.getElementById('song3'))">Demo3</a> <br>
+
+</body>
+</html>
