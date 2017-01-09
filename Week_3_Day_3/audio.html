@@ -36,20 +36,36 @@ Jukebox Song List:
 <br><br>
 
 <audio id="song1" preload="auto" tabindex="0" >
- <source src="s1.mp3">
+ <source src="ss1.mp3">
 </audio>
 
 <audio id="song2" preload="auto" tabindex="0" >
- <source src="s2.mp3">
+ <source src="ss2.mp3">
 </audio>
 
 <audio id="song3" preload="auto" tabindex="0" >
- <source src="s3.mp3">
+ <source src="ss3.mp3">
 </audio>
 
-1. <a id="song1link" onclick="playOrStop(document.getElementById('song1'))">Demo1</a> <br>
-2. <a id="song2link" onclick="playOrStop(document.getElementById('song2'))">Demo2</a> <br>
-3. <a id="song2link" onclick="playOrStop(document.getElementById('song3'))">Demo3</a> <br>
+<audio id="ss1sample" src='https://p.scdn.co/mp3-preview/0d0cceda94ca7cc6123e4030495a8f03a1194a80?cid=null' preload="auto"></audio>
+
+<audio id="ss2sample" src='https://p.scdn.co/mp3-preview/9af76e929d60e29cdc3ee1f9509bdc759d6d144d?cid=null' preload="auto"></audio>
+
+<audio id="ss3sample" src='https://p.scdn.co/mp3-preview/643cf6bfac396cc732f28830126d44c32fbad5f9?cid=null' preload="auto"></audio>
+
+
+1. <a id="song1link" onclick="playOrStop(document.getElementById('song1'))">Demo1</a>
+<button class="sample" onclick="playOrStop(document.getElementById('ss1sample'))">Preview</button>
+<img class="listen" src="https://i.scdn.co/image/533c4d12705e7728ef7aba1a9d4a158c0410f61d"></img><br>
+
+2. <a id="song2link" onclick="playOrStop(document.getElementById('song2'))">Demo2</a>
+<button class="sample" onclick="playOrStop(document.getElementById('ss2sample'))">Preview</button>
+<img class="The Heart of The Matter" src="https://i.scdn.co/image/ba574d0754a06dd8ac8cf92a13f214bd0c6e46eb"></img><br>
+
+3. <a id="song2link" onclick="playOrStop(document.getElementById('song3'))">Demo3</a> 
+<button class="sample" onclick="playOrStop(document.getElementById('ss3sample'))">Preview</button>
+<img class="pressure" src="https://i.scdn.co/image/8c4a9930ebe5fe2d928572dbb3860d6d2d196071"></img><br>
+
 
 </body>
 </html>
