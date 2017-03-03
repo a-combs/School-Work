@@ -1,0 +1,4 @@
+require 'sinatra/activerecord/rake'
+require './app'
+
+set :database, { adapter: 'sqlite3', database: 'library.sqlite3'}

@@ -1,0 +1,33 @@
+<h1> Add a book to the library </h1>
+
+<form method= "POST" action="create-user">
+<label>Title</label>
+<input name="title">
+<br>
+<label>Author</label>
+<input name="author">
+<br>
+<label>Year_Published</label>
+<input name="year_published">
+<br>
+<input type="submit" value="Submit">
+</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>title</th>
+				<th>author</th>
+				<th>year_published</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% @books.each do |book| %>
+				<tr>
+					<td><%= book.title %></td>
+					<td><%= book.author %></td>
+					<td><%= book.year_published %></td>
+				</tr>	
+			<% end %>
+		</tbody>
+	</table>	
